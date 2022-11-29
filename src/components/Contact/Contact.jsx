@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import css from './ContactListElement.module.css';
 
-export const ContactListElement = ({
+export const Contact = ({
   name,
   number,
   onDeleteContact,
@@ -18,9 +18,9 @@ export const ContactListElement = ({
   );
 };
 
-export default ContactListElement;
+export default Contact;
 
-ContactListElement.propTypes = {
+Contact.propTypes = {
   name: PropTypes.string.isRequired,
   number: PropTypes.string.isRequired,
   contactId: PropTypes.string.isRequired,
